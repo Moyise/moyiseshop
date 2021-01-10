@@ -1,0 +1,88 @@
+body {
+  background-color: #fff;
+  /* font-family: "Montserrat", sans-serif !important; */
+  font-family: "Roboto", sans-serif !important;
+}
+
+header {
+  background-color: #023e8a;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+h4 {
+  font-size: 1rem !important;
+}
+
+main {
+  min-height: 90vh;
+}
+
+footer {
+  background-color: #023e8a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+/* carousel */
+.carousel {
+  display: block;
+  background: linear-gradient(-45deg, #01c4ff, #ff6eff, #130974, #ffe5b9);
+  background-size: 400% 400%;
+  animation: change 70s ease-in-out infinite;
+  box-shadow: 0 10px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 15px;
+}
+
+@keyframes change {
+  0% {
+    background-position: 15% 0%;
+  }
+  50% {
+    background-position: 86% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h4 {
+  color: rgb(0, 0, 0);
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 20px rgba(99, 99, 99, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .carousel-caption h4 {
+    font-size: 13px !important;
+  }
+}
